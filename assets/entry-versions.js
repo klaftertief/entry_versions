@@ -60,5 +60,7 @@
 	};
 	
 	jQuery(document).ready(function() {
-		EntryVersions.init();
+		if (jQuery('.field-entry_versions').length) {
+			EntryVersions.init();
+		};
 	});
